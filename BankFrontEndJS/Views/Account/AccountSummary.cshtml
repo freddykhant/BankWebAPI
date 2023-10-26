@@ -1,0 +1,39 @@
+﻿@*
+    For more information on creating views in MVC, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    // You might want to initialize any necessary variables or data structures here.
+}
+
+@model List<string>
+
+<div id="AccountSummary">
+    <h2>Account Summary</h2>
+    
+    <div class="account-info">
+        <strong>Account Number:</strong>
+        <span id="AccountNumber">@Model[0]</span>        
+    </div>
+
+    <div class="account-info">
+        <strong>Current Balance:$</strong>
+        <span id="CurrentBalance">@Model[1]</span>
+    </div>
+
+    <div class="account-info">
+        <strong>Account Number:</strong>
+        <span id="AccountNumber">@Model[2]</span>
+    </div>
+
+    <div class="account-info">
+        <strong>Current Balance:$</strong>
+        <span id="CurrentBalance">@Model[3]</span>
+    </div>
+
+    <div class="account-info">
+        <button id="sortByOldest" onclick="sortTransactionsByOldest()">Show oldest first</button>
+    </div>
+
+    <div id="transactionsContainer"></div>
+
+</div>

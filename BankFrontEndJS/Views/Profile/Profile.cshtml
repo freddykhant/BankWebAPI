@@ -1,0 +1,41 @@
+﻿@*
+    
+*@
+@{
+    
+}
+
+@model List<string>
+
+
+<div id="ProfileView">
+    <h2>User Profile</h2>
+
+    <div class="profile-info">
+        <strong>Name:</strong>
+        <span id="UserName">@Model[0]</span>
+        <button id="edit-btn-name"class="edit-btn" onclick="toggleEdit('name')">Edit</button>
+        <input id="name-change-text"type="text" class="edit-input">
+        <button id="ok-btn-name" class="ok-btn" onclick="confirmEdit('name')">OK</button>
+    </div>
+
+    <div class="profile-info">
+        <strong>Email:</strong>
+        <span id="Email">@Model[1]</span>
+        <button id="edit-btn-email" class="edit-btn" onclick="toggleEdit('email')">Edit</button>
+        <input id="email-change-text" type="text" class="edit-input">
+        <button id="ok-btn-email" class="ok-btn" onclick="confirmEdit('email')">OK</button>
+    </div>
+
+    <div class="profile-info">
+        <strong>Phone Number:</strong>
+        <span id="PhoneNumber">@Model[2]</span>
+        <button id="edit-btn-number" class="edit-btn" onclick="toggleEdit('number')">Edit</button>
+        <input id="number-change-text" type="text" class="edit-input">
+        <button id="ok-btn-number" class="ok-btn" onclick="confirmEdit('number')">OK</button>
+    </div>
+</div>
+
+
+
+

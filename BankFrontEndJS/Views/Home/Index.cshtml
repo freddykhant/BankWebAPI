@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Page</title>
+    <link rel="stylesheet" href="~/css/site.css">
+
+</head>
+<body>
+    <div id="header">
+    </div>
+    <div id="navigation">
+        <ul>
+            <li> <button type="button" id="LoginButton" onclick="loadView()">Login</button></li>
+            <li> <button type="button" id="LogoutButton" onclick="loadView('logout')" style="display: none;">Logout</button></li>
+            <li> <button type="button" id="ProfileButton" onclick="loadView('profile')" style="display: none;">Profile</button></li>
+            <li> <button type="button" id="AccountButton" onclick="loadView('account')" style="display: none;">Account</button></li>
+            <li> <button type="button" id="TransactionsButton" onclick="loadView('transactions')" style="display: none;">Transactions</button></li>
+            <li> <button type="button" id="TransferButton" onclick="loadView('transfer')" style="display: none;">Transfer</button></li>
+        </ul>
+    </div>
+    <div id="main">
+    </div>
+    <div id="footer">
+        <p> Developed by Sajib Mistry for Curtin University</p>
+    </div>
+    <script src="~/js/site.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+</body>
+</html>
